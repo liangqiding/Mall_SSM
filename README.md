@@ -29,7 +29,7 @@
 
 # 3.1 用例图
 若图片无法加载，请移步博客
-![博客： https://blog.csdn.net/dingdingdandang/article/details/106305517](https://github.com/liangqiding/md_image_repository/blob/master/onlineShop/UseCase_user.png)
+![博客： https://blog.csdn.net/dingdingdandang/article/details/106305517](https://blog.csdn.net/dingdingdandang/article/details/106305517)
 # 3.2 类图
 
 # 3.3 活动图
