@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shop.core.dao.CustomerDao">
+    <!--SQL片段  -->
+    <sql id="selectCustomerListWhere">
+        <where>
+	       <if test="s_name != null" >
+	           s_name like "%"#{s_name}"%"
+	       </if>
+	       <if test="s_supplier != null" >
+	        and s_supplier = #{s_supplier}
+	       </if>
+	       <if test="s_class != null" >
+	        and s_class = #{s_class}
+	       </if>
+	       <if test="s_state != null" >
+	        and s_state = #{s_state}
+	       </if>
+        </where>
+    </sql>
+	<!-- 查询客户列表  -->
+	<select id="selectCustomerList" parameterType="customer" 
+                                           resultType="customer">
+		SELECT
+			s_id,
+			s_name,
+			s_user_id,
+			s_create_id,
+			b.dict_item_name s_supplier,
+			c.dict_item_name s_class,
+			d.dict_item_name s_state,
+			s_linkman,
+			s_xsum,
+			s_ksum,
+			cust_createtime,
+			s_price,
+			img
+		FROM
+			customer a
+		LEFT JOIN (
+			SELECT
+				dict_id,
+				dict_item_name
+			FROM
+				base_dict
+			WHERE
+				dict_type_code = '002'
+		) b ON a.s_supplier = b.dict_id
+		LEFT JOIN (
+			SELECT
+				dict_id,
+				dict_item_name
+			FROM
+				base_dict
+			WHERE
+				dict_type_code = '001'
+		) c ON a.s_class = c.dict_id
+		LEFT JOIN (
+			SELECT
+				dict_id,
+				dict_item_name
+			FROM
+				base_dict
+			WHERE
+				dict_type_code = '006'
+		) d ON a.s_state = d.dict_id
+		<include refid="selectCustomerListWhere"/>
+		<!-- 执行分页查询 -->
+		<if test="start !=null and rows != null">
+			limit #{start},#{rows}
+		</if>
+	</select>
+	<!-- 查询客户总数 -->
+	<select id="selectCustomerListCount" parameterType="customer" 
+                                                 resultType="Integer">
+		select count(*) from customer
+		<include refid="selectCustomerListWhere"/>
+	</select>	
+	
+	<!-- 添加客户 -->
+	<insert id="createCustomer" parameterType="customer">
+	    insert into customer(
+	                     s_name,
+	                     s_user_id,
+	                     s_create_id,
+	                     s_supplier,
+	                     s_class,
+	                     s_state,
+	                     s_linkman,
+	                     s_xsum,
+	                     s_ksum,
+	                     s_price,
+	                     cust_address,
+	                     cust_createtime,
+	                     img
+	             )
+	             values(#{s_name},
+	                    #{s_user_id},
+	                    #{s_create_id},
+	                    #{s_supplier},
+	                    #{s_class},
+	                       23,
+	                    #{s_linkman},
+	                        0,
+	                    #{s_ksum},
+	                    #{s_price},
+	                    #{cust_address},
+	                    #{cust_createtime},
+	                    #{img}
+	            )
+	</insert>
+	<!-- 根据id获取客户信息 -->
+	<select id="getCustomerById" parameterType="Integer" 
+	resultType="customer">
+	    select * from customer where s_id = #{id}
+	</select>
+	<!-- 更新客户 -->
+	<update id="updateCustomer" parameterType="customer">
+	    update customer
+	    <set>
+	        <if test="s_name!=null">
+	            s_name=#{s_name},
+	        </if>
+	        <if test="s_user_id!=null">
+	            s_user_id=#{s_user_id},
+	        </if>
+	        <if test="s_create_id!=null">
+	            s_create_id=#{s_create_id},
+	        </if>
+	        <if test="s_supplier!=null">
+	            s_supplier=#{s_supplier},
+	        </if>
+	        <if test="s_class!=null">
+	            s_class=#{s_class},
+	        </if>
+	        <if test="s_state!=null">
+	            s_state=#{s_state},
+	        </if>
+	        <if test="s_linkman!=null">
+	            s_linkman=#{s_linkman},
+	        </if>
+	        <if test="s_xsum!=null">
+	            s_xsum=#{s_xsum},
+	        </if>
+	        <if test="s_ksum!=null">
+	            s_ksum=#{s_ksum},
+	        </if>
+	        <if test="s_price!=null">
+	            s_price=#{s_price},
+	        </if>
+	        <if test="cust_address!=null">
+	            cust_address=#{cust_address},
+	        </if>
+	        <if test="cust_createtime!=null">
+	            cust_createtime=#{cust_createtime},
+	        </if>
+	        <if test="img!=null">
+	            img=#{img},
+	        </if>
+	    </set>
+	    where s_id=#{s_id}
+	</update>
+	<!-- 更新客户 -->
+	<update id="update" parameterType="customer">
+	    update customer
+	    set
+	        
+	            
+	        
+	        <if test="#{s_ksum}!=null">
+	            s_ksum=s_ksum-#{s_ksum},
+	        </if>
+	         s_xsum=s_xsum+#{s_ksum},
+	         s_state=22
+	    
+	    where s_id=#{s_id}
+	</update>
+	
+	<!-- 删除客户 -->
+	<delete id="deleteCustomer" parameterType="Integer">
+	    delete from customer where s_id=#{id}
+	</delete>
+</mapper>

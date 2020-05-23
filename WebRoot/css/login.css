@@ -1,0 +1,11 @@
+#table2 
+{
+    border:3px solid #00ffff;
+   
+    color:#000000;
+}
+th
+{
+    background-color:green;
+    color:white;
+}

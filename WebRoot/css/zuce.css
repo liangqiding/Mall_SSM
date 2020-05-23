@@ -1,0 +1,150 @@
+
+.header
+{
+	text-align: center;
+	padding:30px;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,1.0);
+}
+.navbar
+{
+	overflow: hidden;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,1.0);
+}
+.navbar a
+{
+	color:#000000;
+	box-sizing:border-box;
+	float: right;
+	display: block;
+	text-align: center;
+	padding: 15px 20px;
+	margin-right:50px;
+	text-decoration: none;
+}
+.navbar a:hover
+{
+	background-color:#c0ebe9;
+	opacity:0.6;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,1.0);
+	color: #0000ff;
+}
+.row
+{
+	width: 50%;
+	box-sizing: border-box;
+	float: left;
+}
+.main
+{
+	width: 30%;
+	box-sizing: border-box;
+	float: right;
+	margin-right: 150px;
+	margin-top: 50px;
+}
+.center
+{
+	font-size:25px;
+	text-align: center;
+}
+.center-msg
+{
+	font-size:15px;
+	text-align: center;
+	color: #ff0080;
+}
+input[type=submit]
+{
+	background-color: #00ff00;
+	color: white;
+	border: none;
+	padding: 5px 15px;
+	margin: 5px;
+	cursor: pointer;
+	
+	
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+  
+}
+input[type=text],input[type=password]
+{
+	box-sizing:border-box;
+	width: 70%;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.form
+{
+	box-sizing:border-box;
+	opacity:0.8;
+	background-color:#daf1f1;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,1.0);
+	padding: 25px 20px 1px 25px;
+	border-radius: 30px;
+	
+}
+.bottom
+{
+	overflow: hidden;
+}
+.bottom a 
+{
+	color: #0080ff;
+	box-sizing: border-box;
+	float: right;
+	padding: 5px 10px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+.bottom a.sm
+{
+	
+	box-sizing:border-box;
+	float:left;
+	padding: 1px 1px;
+}
+.bottom a.sm1
+{
+	
+	box-sizing:border-box;
+	float:left;
+}
+.img1
+{
+	
+	
+	box-sizing:border-box;
+	
+	border-radius: 3px;
+	padding-bottom: 0px;
+	margin: 0px;
+}
+
+.bottom a:hover 
+{
+	background-color:#c0ebe9;
+	box-shadow: 0px 0px 6px 0 rgba(0,0,0,0.6);
+	color: #0000ff;
+}
+.dropdown-sm
+{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-sm-c
+{
+	display: none;
+	position: absolute;
+	padding: 10px;
+	font-size: 10px;
+	text-align: center;
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+}
+.dropdown-sm:hover .dropdown-sm-c
+{
+	display: block;
+}
