@@ -1,6 +1,7 @@
 # onlineShop
-2018 基于Spring,SpringMvc,Mybatis,Jsp开发的购物商城，带后台及Security权限管理
 
+基于Spring,SpringMvc,Mybatis,Jsp开发的购物商城，带后台及Security权限管理
+# 开发工具MyEclipse 2017  编写完成时间：2018年  JKD版本1.7  
 # 1 项目主题
 
 ## 1.1主题
