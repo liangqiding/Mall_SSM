@@ -27,31 +27,17 @@
 ##### （4）生成订单
 
 
-
 # 3.1 用例图
-![用例图](https://img-blog.csdnimg.cn/20200523200900283.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RpbmdkaW5nZGFuZGFuZw==,size_16,color_FFFFFF,t_70#pic_center)
-
+若图片无法加载，请移步博客
+![博客： https://blog.csdn.net/dingdingdandang/article/details/106305517](https://github.com/liangqiding/md_image_repository/blob/master/onlineShop/UseCase_user.png)
 # 3.2 类图
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200523200930825.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RpbmdkaW5nZGFuZGFuZw==,size_16,color_FFFFFF,t_70#pic_center)
+
 # 3.3 活动图
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200523200946466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RpbmdkaW5nZGFuZGFuZw==,size_16,color_FFFFFF,t_70#pic_center)
--------------------------------------------------------------------
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200523201006608.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RpbmdkaW5nZGFuZGFuZw==,size_16,color_FFFFFF,t_70#pic_center)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200523201020532.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RpbmdkaW5nZGFuZGFuZw==,size_16,color_FFFFFF,t_70#pic_center)
+
 # 3.4 ER图
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200523201033833.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RpbmdkaW5nZGFuZGFuZw==,size_16,color_FFFFFF,t_70#pic_center)
+
 # 3.5 项目截图
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200523201103531.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RpbmdkaW5nZGFuZGFuZw==,size_16,color_FFFFFF,t_70#pic_center)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200523201124686.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RpbmdkaW5nZGFuZGFuZw==,size_16,color_FFFFFF,t_70#pic_center)
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200523201136933.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RpbmdkaW5nZGFuZGFuZw==,size_16,color_FFFFFF,t_70#pic_center)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200523201150484.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RpbmdkaW5nZGFuZGFuZw==,size_16,color_FFFFFF,t_70#pic_center)
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200523201218471.png#pic_center)
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200523201230593.png#pic_center)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200523201243577.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RpbmdkaW5nZGFuZGFuZw==,size_16,color_FFFFFF,t_70#pic_center)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200523201258239.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RpbmdkaW5nZGFuZGFuZw==,size_16,color_FFFFFF,t_70#pic_center)
+ 若图片无法加载，请移步博客
 
 开源项目gitHub地址：https://github.com/liangqiding/onlineShop.git
 
