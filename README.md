@@ -62,7 +62,7 @@
 ##### 3.系统实现分析：此网站数据业务逻辑都很简单，需求明确，实现过程不难。
 小结：网站商城开发是可行的
 
-# 3.1 用例图
+# 3.1 用例图  若图片无法加载，可访问本人博客 https://blog.csdn.net/dingdingdandang/article/details/106305517
 ![Image](https://github.com/liangqiding/md_image_repository/blob/master/onlineShop/UseCase_user.png)
 ## 用例图
 
