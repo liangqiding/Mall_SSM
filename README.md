@@ -62,7 +62,7 @@
 小结：网站商城开发是可行的
 
 # 3.1 用例图
-[![](./01.png '百度')](https://github.com/liangqiding/md_image_repository/blob/master/onlineShop/UseCase_user.png){:target="_blank"}
+[![](https://github.com/liangqiding/md_image_repository/blob/master/onlineShop/UseCase_user.png '用例图')](https://github.com/liangqiding/md_image_repository/blob/master/onlineShop/UseCase_user.png){:target="_blank"}
 
 # 3.2 类图
 
